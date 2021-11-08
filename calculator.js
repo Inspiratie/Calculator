@@ -16,3 +16,7 @@ function clickOn8() {
    myStr += 8;
 }
 
+function clickOnReset() {
+   document.getElementById('calculate-area').value = 0;
+   myStr = 0;
+}
