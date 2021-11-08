@@ -55,18 +55,23 @@ button {
     
     width: 95%;
     height: 95%;
-    background-color: rgb(5, 149, 165);
+    background-color: rgb(193, 161, 203);
     border: none;
 }
 
 .calculate button, .reset button {
     width: 97.5%;
     height: 100%;
+    background-color: rgb(211, 133, 161);
 }
 
 #calculate-area {
     width: 99%;
     height: 100%;
-    background-color: rgb(48, 48, 114)
+    background-color: rgb(230, 128, 169);
+    color: white;
+    font-size: 2rem;
+    text-align: end;
+    font-weight: bolder;
 }
 
