@@ -3,6 +3,15 @@ function clickOnEq() {
   if (myArr.includes("/")) {
      const newArr = myArr.filter(el => {if(!isNaN(el)) return el});
     document.getElementById("calculate-area").value = `${myArr.join(' ')} = ${newArr.reduce((total, el) => total /= el)}`;
+  } else if(myArr.includes("*")) {
+   const newArr = myArr.filter(el => {if(!isNaN(el)) return el});
+   document.getElementById("calculate-area").value = `${myArr.join(' ')} = ${newArr.reduce((total, el) => total *= el)}`;
+  } else if(myArr.includes("+")) {
+   const newArr = myArr.filter(el => {if(!isNaN(el)) return el});
+   document.getElementById("calculate-area").value = `${myArr.join(' ')} = ${newArr.reduce((total, el) => total += el)}`;
+  } else if(myArr.includes("-")) {
+   const newArr = myArr.filter(el => {if(!isNaN(el)) return el});
+   document.getElementById("calculate-area").value = `${myArr.join(' ')} = ${newArr.reduce((total, el) => total -= el)}`;
   }
 }
 
